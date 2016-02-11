@@ -38,6 +38,14 @@ CPM_AddModule("SSVCMake"
 SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_SSVCMake}/cmake/modules ${CMAKE_MODULE_PATH})
 include(SSVCMake)
 
+CPM_AddModule("vrm_pp"
+	GIT_REPOSITORY "${SSVDepsRoot}vrm_pp"
+	USE_EXISTING_VER false
+	GIT_TAG "cpm")
+SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_vrm_pp} ${CMAKE_MODULE_PATH})
+
+include(vrm_pp)
+
 # Basic project setup.
 vrm_cmake_init_project(SSVUtils)
 vrm_cmake_find_extlib(vrm_pp)
