@@ -44,7 +44,7 @@ CPM_AddModule("vrm_pp"
 	GIT_TAG "cpm")
 SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_vrm_pp} ${CMAKE_MODULE_PATH})
 
-include(vrm_pp)
+#include(vrm_pp)
 
 # Basic project setup.
 vrm_cmake_init_project(SSVUtils)
