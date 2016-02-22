@@ -68,6 +68,6 @@ SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_vrm_pp} ${CMAKE_MODULE_PATH})
 #add_subdirectory(test)
 
 # Create header-only install target (automatically glob)
-vrm_cmake_header_only_install_glob("${SSVUTILS_INC_DIR}" "include")
+#vrm_cmake_header_only_install_glob("${SSVUTILS_INC_DIR}" "include")
 CPM_ExportAdditionalIncludeDir("./include")
 CPM_InitModule(${CPM_MODULE_NAME})
