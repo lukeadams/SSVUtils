@@ -48,7 +48,7 @@ SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_vrm_pp} ${CMAKE_MODULE_PATH})
 
 # Basic project setup.
 vrm_cmake_init_project(SSVUtils)
-vrm_cmake_find_extlib(vrm_pp)
+#vrm_cmake_find_extlib(vrm_pp)
 
 # Alias the include directory.
 set(SSVUTILS_INC_DIR "${SSVUTILS_SOURCE_DIR}/include/")
