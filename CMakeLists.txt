@@ -47,25 +47,25 @@ SET(CMAKE_MODULE_PATH ${CPM_KV_SOURCEDIR_MAP_vrm_pp} ${CMAKE_MODULE_PATH})
 #include(vrm_pp)
 
 # Basic project setup.
-vrm_cmake_init_project(SSVUtils)
+#vrm_cmake_init_project(SSVUtils)
 #vrm_cmake_find_extlib(vrm_pp)
 
 # Alias the include directory.
-set(SSVUTILS_INC_DIR "${SSVUTILS_SOURCE_DIR}/include/")
+#set(SSVUTILS_INC_DIR "${SSVUTILS_SOURCE_DIR}/include/")
 
 # Other compiler flags.
-vrm_cmake_add_common_compiler_flags()
+#vrm_cmake_add_common_compiler_flags()
 
 # Setup user options.
-vrm_cmake_add_option_memcheck()
-vrm_cmake_add_option_no_exceptions()
-vrm_cmake_add_option_werror()
+#vrm_cmake_add_option_memcheck()
+#vrm_cmake_add_option_no_exceptions()
+#vrm_cmake_add_option_werror()
 
 # The `check` target runs all tests and examples.
-vrm_check_target()
+#vrm_check_target()
 
 # Setup subdirectories.
-add_subdirectory(test)
+#add_subdirectory(test)
 
 # Create header-only install target (automatically glob)
 vrm_cmake_header_only_install_glob("${SSVUTILS_INC_DIR}" "include")
